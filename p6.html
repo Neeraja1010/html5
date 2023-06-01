@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html-5</title>
+    <style>
+        dialog{
+            background-color: navy
+            color: white;
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>SEMANTIC ELEMENTS..!</h1>
+        <p><b>in any language,it is essential understand the meaning of words during communication.</b></p>
+        <h2>whyto use SEMANTIC ELEMENTS?</h2>
+    </center>
+    <details>
+        <h1>html</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aut ratione excepturi sapiente hic similique quaerat temporibus fugit ipsum quod exercitationem eius, inventore eaque, nulla error. Odio architecto maiores porro!</p>
+    </details>
+    <details>
+        <h1>css</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt animi saepe illum, fugit impedit ad! Laboriosam reiciendis odio officia doloremque sint quibusdam esse, consequatur distinctio delectus aspernatur alias assumenda earum!</p>
+    </details>
+    <details>
+        <h1>js</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In et dolorem saepe illo fuga esse distinctio ipsam maxime corrupti reprehenderit, sed quis assumenda quisquam ea nihil praesentium velit possimus vitae!</p>
+    </details>
+    <hr>
+    <center>
+        <h3>this is a summery tag</h3>
+        <p>the <b>html summery</b> tag is used with<b>details</b> tag.it is used as a summery,caption or legend for the content of a details elements.</p>
+    </center>
+    <hr>
+    <details>
+        <summery>html</summery>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus modi non architecto iure. Ut odio velit exercitationem esse mollitia consectetur obcaecati quis laudantium totam, iusto quibusdam cumque sunt vitae reprehenderit.</p>
+    </details>
+    <details1>
+        <summery>js</summery>
+        <h1>js</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt sint nulla fugit itaque veniam eveniet maiores aut reprehenderit quibusdam laborum ad libero pariatur magnam laboriosam, minus rerum a odio nisi?</p>
+    </details1>
+    <hr>
+    <center>
+        <h3>time tag..!</h3>
+        <p><b>html time</b> tag is used to define date and time.it displays time value in a 24 hours clock or a precise date in a gregorian calender in html.</p>
+        <hr>
+        </center>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, atque. Ullam consequuntur commodi labore eveniet doloribus impedit modi iure quibusdam ratione optio. Adipisci eius ullam numquam aut quas nobis illum?</p>
+        <p>we open our office at<time>9:30</time>pm</p>
+        <hr>
+        <center>
+            <h3>this is a dialog tag..!</h3>
+            <p><b>(this tag to create a new popup dialog on a web page.)</b></p>
+        </center>
+        <dialog id="dialog">
+            <button type="button" id="butn2">&times;</button>
+            <h1>welcome to html-5</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur iure labore voluptates placeat explicabo voluptatem perspiciatis ducimus non ad quasi. Dolorum placeat dolorem aperiam at odit modi eaque amet quos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat minima eos aperiam fugit aspernatur deleniti minus facilis, ratione saepe laboriosam enim ipsam, nobis totam, maxime quod. Vero perspiciatis ipsa amet?</p>
+        </dialog>
+        <button type="button" id="btn1">opendialog</button>
+        <script>
+            document.getElementById("btn1").onclock=functin(){
+                document.getElementById("dialog").show();
+            }document.getElementById("btn2").onclock=functin(){
+                document.getElementById("dialog").show();
+            }
+        </script>
+</body>
+</html>

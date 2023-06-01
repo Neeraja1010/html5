@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas</title>
+</head>
+<body>
+    <center>
+        <h1>this is canvas tag</h1>
+        <p>
+            the html element provides html a bitmaps surface to work with. it is used to draw graphics on the web pages.
+            the <b>HTML-5 CANVAS TAG</b> is used to draw graphics using scripting language like javascript.
+        </p>
+    </center>
+    <hr>
+    <canvas id="mycanvas2" width="300px" height="100px" style="border:2px solid red;"></canvas>
+    <p><b>note: it is always necessary to specify the id attribute and the height & width attribute to define the size of the canvas. you can have multiple canvas element on one html page.</b></p>
+    <hr>
+
+    <canvas id="mycanvas1" width="250" height="150" style="border:1px solid blue;"></canvas>
+    <script>
+        let canvas1 = document.getElementById("myCanvas3").getContext("2d");
+        canvas1.fillStyle="red";
+        canvas1.fillRect(25,25,200,100);
+    </script>
+
+    <hr>
+
+    <center>
+        <h3>Drawing circle on Canvas</h3>
+    </center>
+    <canvas id="myCanvasCircle" width="200" height="200" style="border:1px solid green;"></canvas>
+    <script>
+        let canvas2 = document.getElementById("myCanvasCircle").getContext("2d");
+        canvas2.fillStyle = "red";
+        canvas2.arc(100,100,90,0,2*Math.PI);
+        canvas2.fill();
+        canvas.stroke();
+    </script>
+    <hr>
+
+    <center>
+        <h3>Drawing text on canvas</h3>
+    </center>
+    <canvas id="myCanvas" width="578" height="200" style="border:1px solid red;"></canvas>
+
+    <script>
+        let canvas3 = document.getElementById("myCanvas").getContext("2d");
+        canvas3.font=`40pt Times New Roman`;
+        canvas3.fillStyle = "blue";
+        canvas3.fillText('HELLO HTML-5', 150, 100);
+    </script>
+</body>
+</html>
